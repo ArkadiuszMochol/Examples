@@ -25,6 +25,13 @@ Recipe salad = new Recipe("salad");
     boolean hasProductsForSalad = fridge.hasProductFor(salad);
         System.out.println("Have I got product for salad? "+hasProductsForSalad);
 
+Recipe friedEggs = new Recipe("friedEggs");
+friedEggs.addIngredient(new Product("egg"));
+friedEggs.addIngredient(new Product("butte r"));
+
+    boolean hasIngredientsForFriedEggs = fridge.hasProductFor(friedEggs);
+        System.out.println("Have I got product for fried eggs? "+hasIngredientsForFriedEggs);
+
 
 
     }
