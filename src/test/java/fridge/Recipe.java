@@ -12,11 +12,11 @@ public class Recipe {
         this.name = recipe;
     }
 
-    List<Product> ingredients = new ArrayList<>();
-    private Map<Product, Integer> productsMap = new HashMap<>();
+    Map<Product, Integer> ingredients = new HashMap<>();
+//    private Map<Product, Integer> productsMap = new HashMap<>();
 
-    public void addIngredient(Product product){
-        ingredients.add(product);
+    public void addIngredient(Product product, Integer quantity){
+        ingredients.put(product, quantity);
     }
 
 }
